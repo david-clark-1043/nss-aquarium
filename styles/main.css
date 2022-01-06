@@ -36,6 +36,11 @@ ul {
     display: flex;
 }
 
+.locations-list {
+    display: flex;
+    flex-direction: column;
+}
+
 .single-location {
     display: flex;
 }
@@ -44,7 +49,9 @@ ul {
 }
 
 .location-image-direct {
-    height: 100%;
+ 
+ /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+     object-fit:cover;
 }
 
 .location-name {
