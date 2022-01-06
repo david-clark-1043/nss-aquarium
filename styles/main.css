@@ -1,5 +1,70 @@
-#fishtank {}
 
-.fish {}
 
-.fish__name {}
+.main {
+    display: flex;
+
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.page-header {
+    text-align: center;
+}
+.fish-image {
+    flex-basis: 25%;
+}
+
+.fish-image-direct {
+    height: 75%;
+}
+
+.fish-info {
+    flex-basis: 75%;
+}
+h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+.single-fish {
+    display: flex;
+}
+
+.single-location {
+    display: flex;
+}
+.location-image {
+    flex-basis: 75%;
+}
+
+.location-image-direct {
+    height: 100%;
+}
+
+.location-name {
+    flex-basis: 25%;
+}
+section {
+    border: 1px dotted;
+    margin: 5px;
+    padding: 5px;
+}
+
+div {
+    border: 1px dotted;
+    margin: 5px;
+    padding: 5px;
+}
+
+aside {
+    border: 1px dotted;
+    margin: 5px;
+    padding: 5px;
+    flex-basis: 33%;
+}
