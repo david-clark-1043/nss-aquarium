@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 102, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main {
@@ -24,7 +25,7 @@ img {
     padding: .1em;
 }
 
-.fish-header {
+.fish {
     color: black;
     background-color: aquamarine;
     border: green 1px dotted;
@@ -46,6 +47,7 @@ img {
     border: green 1px dashed;
     border-radius: 10px;
     background-color:lightcyan;
+
 }
 
 .fish-image-direct {
@@ -58,6 +60,7 @@ img {
 } */
 .fish-info {
     flex-basis: 75%;
+    margin-top: 0;
     /* text-align: center; */
 }
 
@@ -82,7 +85,9 @@ h2, h3 {
     margin: 0;
 }
 
-
+.header {
+    text-align: center;
+}
 
 .location-section {
     border: 0;
