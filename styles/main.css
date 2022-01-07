@@ -12,28 +12,80 @@ img {
 .page-header {
     text-align: center;
 }
+
+.fish-header {
+    color: black;
+    background-color: aquamarine;
+    border: green 1px dotted;
+    border-radius: 10px;
+    text-align: center;
+}
 .fish-image {
     flex-basis: 25%;
 }
 
-.fish-image-direct {
-    height: 75%;
+.fish-collection {
+    /* flex-basis: 50%; */
+    border: 0;
+    padding: 0;
+    background-color: lightblue;
 }
 
+.fish-list {
+    border: green 1px dashed;
+    border-radius: 10px;
+    background-color:lightcyan;
+}
+
+.fish-image-direct {
+    /*height: 75%;*/
+}
+/* .fish-info ul {
+    display: inline-block;
+    padding-left: 0;
+    text-align: left;
+} */
 .fish-info {
     flex-basis: 75%;
+    /* text-align: center; */
 }
+
+.single-fish {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    border: 0;
+    border-bottom: 1px black solid;
+}
+
+.single-fish section {
+    margin: 0;
+    border: 0;
+}
+
+
+
 h2, h3 {
     padding: 0;
     margin: 0;
 }
 
-ul {
-    margin: 0;
+
+
+.location-section {
+    border: 0;
+    padding: 0;
 }
 
-.single-fish {
-    display: flex;
+.travel-section {
+    border: 0; 
+    padding: 0;
+}
+
+.locations-subsec {
+    border: 0;
+    padding: 0;
 }
 
 .locations-list {
@@ -57,6 +109,7 @@ ul {
 .location-name {
     flex-basis: 25%;
 }
+
 section {
     border: 1px dotted;
     margin: 5px;
