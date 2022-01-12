@@ -2,14 +2,28 @@
 import { getFish } from './database.js'
 
 export const FishList = () => {
-    // Invoke the function that you imported from the database module
-    const fishes = getFish()
+    // Get the filtered lists of fish
+    const fishes = []
+    const holyFish = mostHolyFish()
+    const soldiers = soldierFish()
+    const unHolyFish = nonHolyFish()
+    
+    // put fish in worthiness order
+    for(const fish of holyFish){
+        fishes.push(fish)
+    }
+    for(const fish of soldiers){
+        fishes.push(fish)
+    }
+    for(const fish of unHolyFish){
+        fishes.push(fish)
+    }
 
     // Start building a string filled with HTML syntax
     let htmlString = `<section class="fish header">
     <h2>Fish Collection</h2>
     </section>
-    <article class="fish-list">
+    <section class="fish-list">
     `
 
     // Create HTNL representations of each fish here
@@ -30,7 +44,7 @@ export const FishList = () => {
         </section>
 `
     }
-    htmlString += `</article>`
+    htmlString += `</section>`
     //console.log(htmlString);
     return htmlString
 }
