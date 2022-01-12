@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 102, 255);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main {
@@ -51,7 +50,7 @@ img {
 }
 
 .fish-image-direct {
-    /*height: 75%;*/
+    height: 75%; 
 }
 /* .fish-info ul {
     display: inline-block;
