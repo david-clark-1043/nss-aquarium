@@ -47,7 +47,7 @@ export const FishList = () => {
 `
     }
     htmlString += `</section>`
-    //console.log(htmlString);
+    console.log(htmlString);
     return htmlString
 }
 
