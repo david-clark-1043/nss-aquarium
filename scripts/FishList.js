@@ -26,10 +26,10 @@ export const FishList = () => {
     <section class="fish-list">
     `
 
-    // Create HTNL representations of each fish here
+    // Create HTNL representations of each fish and add to htmlstring
     for (const fish of fishes) {
 
-        // Why is there a backtick used for this string?
+        // Why is there a backtick used for this string? - Intrepolation
         htmlString += `<section class="single-fish">
             <div class="fish-image">
                 <img  class="fish-image-direct" src="${fish.image}" />
@@ -51,9 +51,10 @@ export const FishList = () => {
 
 export const mostHolyFish = () => {
     // 3, 6, 9, 12, etc... fish
+    // get all fish list and create array for holyfish
     const fishes = getFish()
     const holyFish = []
-
+    // filter fish of length that is a multiple of 3 and push to holyfish array
     for (const fish of fishes) {
         if(fish.length % 3 === 0){
             holyFish.push(fish)

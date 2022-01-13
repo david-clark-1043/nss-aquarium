@@ -4,6 +4,10 @@ body {
     background-color: rgb(0, 102, 255);
 }
 
+sup {
+    font-style: normal;
+}
+
 .main {
     display: flex;
     background-color:silver;
@@ -85,12 +89,17 @@ h2, h3 {
 }
 
 .header {
+    color: black;
+    background-color: aquamarine;
+    border: green 1px dotted;
+    border-radius: 10px;
     text-align: center;
+    
 }
 
 .location-section {
-    border: 0;
-    padding: 0;
+    /* border: 0;
+    padding: 0; */
     background-color: seagreen;
 }
 
