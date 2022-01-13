@@ -30,6 +30,40 @@ const database = {
             location: "Krakatoa",
             image: "media/fish-images/bruce.png"
         }
+    ],
+    locations: [
+        {
+            name: "Bermuda Triangle",
+            image: "media/location-images/Bermuda_Triangle.png"
+        },
+        {
+            name: "Krakatoa",
+            image: "media/location-images/krakatoa.jpg"
+        }
+    ],
+    travelTips: [
+        {
+            id: 1,
+            quote: "There's always a bigger fish.",
+            author: "Martin"
+        },
+        {
+            id: 2,
+            quote: "Why does it always have to be piranhas?",
+            author: "Martin"
+        }
+    ],
+    tankTips: [
+        {
+            id: 1,
+            quote: "Happiness is a clean fish tank.",
+            author: "Martin"
+        },
+        {
+            id: 2,
+            quote: "Always use Martin's Superior Cleaning SoapTM.",
+            author: "Martin"
+        }
     ]
 }
 
@@ -76,3 +110,19 @@ export const nonHolyFish = () => {
     }
     return regularFish
 }
+
+export const getLocationList = () => {
+    return database.locations.map(location => ({...location}))
+}
+
+export const getTravelTips = () => {
+    return database.travelTips.map(travelTip => ({...travelTip}))
+}
+
+// export const getTravelTips = () => {
+//     return database.travelTips.map(travelTip => ({...travelTip}))
+// }
+
+// export const getTravelTips = () => {
+//     return database.travelTips.map(travelTip => ({...travelTip}))
+// }

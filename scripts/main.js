@@ -1,4 +1,8 @@
 import { FishList } from './fish/FishList.js'
+import { LocationList } from './locations/LocationList.js'
+import { TravelTipList } from './tips/TipsList.js'
+
+
 // import { mostHolyFish } from './fish/FishList.js'
 // import { soldierFish } from './fish/FishList.js'
 // import { nonHolyFish } from './fish/FishList.js'
@@ -10,9 +14,14 @@ import { FishList } from './fish/FishList.js'
     Use . for elements with a "class" attribute
     Use # for elements with an "id" attribute
  */
-const parentHTMLElement = document.querySelector(".fish-collection")
+const fishCollection = document.querySelector(".fish-collection")
+fishCollection.innerHTML = FishList()
 
-parentHTMLElement.innerHTML = FishList()
+const locationsSection = document.querySelector(".locations-subsec")
+locationsSection.innerHTML = LocationList()
+
+const tipSection = document.querySelector(".travel-section")
+tipSection.innerHTML = TravelTipList()
 
 // let holyFish = mostHolyFish()
 // console.log("Holy Fish", holyFish);
