@@ -1,6 +1,5 @@
 body {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     background-color: rgb(0, 102, 255);
 }
@@ -39,6 +38,8 @@ img {
 }
 .fish-image {
     flex-basis: 25%;
+    height: auto;
+    border: 0;
 }
 
 .fish-collection {
@@ -56,7 +57,9 @@ img {
 }
 
 .fish-image-direct {
-    height: 75%; 
+    width: 100%;
+    height: auto;
+    border: 0;
 }
 /* .fish-info ul {
     display: inline-block;
