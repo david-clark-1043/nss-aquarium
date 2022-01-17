@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 102, 255);
+    background-color: rgb(10, 138, 143);
 }
 
 sup {
@@ -11,7 +11,7 @@ sup {
 .main {
     display: flex;
     flex-wrap: wrap;
-    background-color:silver;
+    /* background-color:silver; */
 }
 img {
     max-width: 100%;
@@ -20,8 +20,8 @@ img {
 
 .page-header {
     text-align: center;
-    border: 1px solid black;
-    background-color: rgb(231, 223, 210);
+    border: 0; /* 1px solid black; */
+    background-color:  aquamarine;
     border-radius: 10px;
     margin: auto;
     margin-bottom: .5em;
@@ -36,6 +36,7 @@ img {
     border-radius: 10px;
     text-align: center;
 }
+
 .fish-image {
     flex-basis: 25%;
     height: auto;
@@ -46,16 +47,25 @@ img {
     /* flex-basis: 50%; */
     border: 0;
     /* padding: 0; */
-    background-color: lightblue;
+    /*background-color: lightblue;*/
 }
 
 .fish-list {
-    border: green 1px dashed;
+    border:  0; /*green 1px dashed; */
     border-radius: 10px;
     background-color:lightcyan;
 
 }
+.col {
+        flex: 30%;
+}
 
+
+@media screen and (max-width: 1000px){
+    .main {
+        flex-direction: column;
+    }
+}
 .fish-image-direct {
     width: 100%;
     height: auto;
@@ -96,21 +106,40 @@ h2, h3 {
 .header {
     color: black;
     background-color: aquamarine;
-    border: green 1px dotted;
+    border: 0; /*green 1px dotted;*/
     border-radius: 10px;
     text-align: center;
     
 }
 
 .location-section {
-    /* border: 0;
-    padding: 0; */
-    background-color: seagreen;
+    border: 0;
+    /* padding: 0; */
+    /* background-color: seagreen; */
 }
 
 .travel-section {
     border: 0; 
     padding: 0;
+}
+
+.travel-quote-list {
+    border: 0; /*green 1px dashed;*/
+    border-radius: 10px;
+    background-color:lightcyan;  
+}
+
+.fishtank {
+    /* flex-basis: 50%; */
+    border: 0;
+    /* padding: 0; */
+    /* background-color: lightblue; */
+}
+.fishtank-tip-list {
+    border:  0; /*green 1px dashed; */
+    border-radius: 10px;
+    background-color:lightcyan;
+
 }
 
 .locations-subsec {
@@ -121,23 +150,40 @@ h2, h3 {
 .locations-list {
     display: flex;
     flex-direction: column;
+    border: 0;
+    padding: 0;
+    border-radius: 10px;
+    background-color:lightcyan;
 }
 
 .single-location {
     display: flex;
+    border: 0;
+    padding: 0;
+    border-bottom: 1px black solid;
 }
 .location-image {
     flex-basis: 75%;
+    border: 0;
+    padding: 0;
 }
 
 .location-image-direct {
- 
+    border: 0;
+    padding: 5px;
+    border-radius: 50%;
+    width: 15em;
+    height: 10em;
  /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
-     object-fit:cover;
+     object-fit: cover;
 }
 
 .location-name {
+    border: 0;
+    padding: 0;
     flex-basis: 25%;
+    text-align: center;
+    margin: auto;
 }
 
 section {
