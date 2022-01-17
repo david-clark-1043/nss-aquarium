@@ -15,7 +15,7 @@ const database = {
             image: "media/fish-images/freddi.png"
         },
         {
-            name: "Bruce",
+            name: "Bruce 1",
             food: "People",
             species: "Shark",
             length: 5,
@@ -23,12 +23,12 @@ const database = {
             image: "media/fish-images/bruce.png"
         },
         {
-            name: "Bart",
+            name: "Bruce A",
             food: "People",
-            species: "Whale Shark",
+            species: "Shark",
             length: 7,
             location: "Krakatoa",
-            image: "media/fish-images/bruce.png"
+            image: "media/fish-images/finding-nemo.jpg"
         }
     ],
     locations: [
