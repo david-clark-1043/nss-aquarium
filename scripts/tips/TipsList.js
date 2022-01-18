@@ -21,7 +21,8 @@ export const TravelTipList = () => {
     return htmlString
 }
 
-/* <section class="travel header">
+/* Goal Formatting:
+<section class="travel header">
 <h2>Travel Quotes</h2>
 </section>
 <section class="travel-quote-list">
